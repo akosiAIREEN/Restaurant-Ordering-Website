@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Course - McDonald's</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <img src="images.jpeg/logo.jpeg" alt="McDonald's Logo">
+        <h1>McDonald's</h1>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a> | 
+        <a href="drinks.html">Drinks</a> | 
+        <a href="dessert.html">Dessert</a>
+    </nav>
+
+   <h2>Main Course Menu</h2>
+    
+    <div class="menu-grid">
+        
+        <div class="menu-item">
+            <img src="images.jpeg/Cheese-Burger-Meal.jpeg" alt="Cheese burger">
+            <span><strong>Cheese Burger Meal</strong><br> 165.00 php</span>
+            <input type="number" value="0" class="item-qty" data-price="165.00" aria-label="Item Quantity">
+        </div>
+
+        <div class="menu-item">
+            <img src="images.jpeg/1-pc-Chicken-McDo-Mcspaghetti-with-Drink-and-Fries.jpeg" alt="chicken with spag">
+            <span><strong>chicken with spag</strong><br> 105.99 php</span>
+            <input type="number" min="0" value="0" class="item-qty" data-price="105.99" aria-label="Item Quantity">
+        </div>
+
+        <div class="menu-item">
+            <img src="images.jpeg/sulit-busog-1-pc-mushroom-pepper-steak-with-fries.jpeg" alt="mushroom pepper steak">
+            <span><strong>mushroom pepper steakl</strong><br> 125.99 php</span>
+           <input type="number" min="0" value="0" class="item-qty" data-price="125.99" aria-label="Item Quantity">
+        </div>
+
+    <div class="checkout">
+        <button onclick="computeTotal()">Compute Total</button>
+        <div class="total-display">Total Price: $<span id="total-price">0.00</span></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

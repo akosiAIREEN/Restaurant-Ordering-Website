@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drinks - McDonald's</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <img src="images.jpeg/logo.jpeg" alt="McDonald's Logo">
+        <h1>McDonald's</h1>
+    </div>
+
+    <nav>
+        <a href="index.html">Main Course</a> | 
+        <a href="drinks.html">Drinks</a> | 
+        <a href="dessert.html">Dessert</a>
+    </nav>
+
+    <h2>Drinks Menu</h2>
+    
+    <div class="menu-item">
+        <img src="images.jpeg/McFreeze.jpeg" alt="Mc Freeze">
+        <span><strong>Mc Freeze</strong> 79.00 php</span>
+        <input type="number" min="0" value="0" class="item-qty" data-price="79.00" aria-label="Item Quantity">
+    </div>
+    <div class="menu-item">
+        <img src="images.jpeg/colored.jpeg" alt="flavored Mc Float">
+        <span><strong>Flavored Mcfloat</strong> 99.00 php</span>
+       <input type="number" min="0" value="0" class="item-qty" data-price="99.00" aria-label="Item Quantity">
+    </div>
+    <div class="menu-item">
+        <img src="images.jpeg/CokeZero.jpeg" alt="Coke with zero sugar">
+        <span><strong>Coke zero</strong> 55.00 php</span>
+        <input type="number" min="0" value="0" class="item-qty" data-price="55.00" aria-label="Item Quantity">
+    </div>
+
+    <div class="checkout">
+        <button onclick="computeTotal()">Compute Total</button>
+        <div class="total-display">Total Price: $<span id="total-price">0.00</span></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+body { 
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 20px; 
+    background-color: #f9f9f9; 
+}
+.container { 
+    max-width: 600px; 
+    margin: auto; 
+    background: white; 
+    padding: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+    border-top: 5px solid #DA291C; /* McDonald's Red */
+}
+.header { 
+    text-align: center; 
+    border-bottom: 2px solid #FFC72C; /* McDonald's Yellow */
+    padding-bottom: 10px; 
+    margin-bottom: 20px; 
+}
+.header img { 
+    max-width: 100px; 
+}
+.header h1 {
+   text-align: center;
+    color: #DA291C;
+    margin: 10px 0 0 0;
+}
+nav { 
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+nav a { 
+    margin: 0 10px; 
+    text-decoration: none; 
+    color: #333; 
+    font-weight: bold; 
+}
+nav a:hover {
+    color: #DA291C;
+}
+/* Balutin natin sa grid ang mga menu items para pantay-pantay */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+/* Baguhin ang menu-item para maging pababa (column) ang pwesto */
+.menu-item { 
+    align-items: center;
+    display: flex; 
+    flex-direction: column; /* Ito ang magbababa ng price at input */
+    align-items: center; 
+    text-align: center;
+    padding: 15px; 
+    border: 1px solid #eee; 
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* Design para sa images mo */
+.menu-item img {
+    max-width: 100%;
+    height: 150px; /* Para pantay-pantay ang taas ng lahat ng picture */
+    object-fit: contain; /* Para hindi ma-stretch o pumangit ang image */
+    margin-bottom: 15px;
+}
+
+/* Para bumaba nang kaunti ang input box mula sa text */
+.menu-item span {
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.menu-item input { 
+    width: 60px; 
+    padding: 5px; 
+    text-align: center;
+}
+.checkout { 
+    margin-top: 20px; 
+    text-align: right; 
+}
+button { 
+    padding: 10px 20px; 
+    background-color: #DA291C; /* McDonald's Red */
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    font-weight: bold;
+}
+button:hover { 
+    background-color: #b52217; 
+}
+.total-display { 
+    font-size: 20px; 
+    font-weight: bold; 
+    margin-top: 15px; 
+}
